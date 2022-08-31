@@ -10,7 +10,7 @@ var args = minimist(process.argv.slice(2));
 
 const port = args.port || process.env.port || 3000;
 
-fs.readFile('./public/index.html', 'utf8', (err, html) => {
+fs.readFile('./public/index.html', 'utf8', (err, website) => {
     if (err) {
         console.error(err);
         return;
@@ -20,7 +20,7 @@ fs.readFile('./public/index.html', 'utf8', (err, html) => {
     const server = http.createServer((req, res) => {
         res.statusCode = 200
         res.setHeader('Content-Type', 'text/html')
-        res.end('./public/index.html')
+        res.end(website)
     });
 
 
