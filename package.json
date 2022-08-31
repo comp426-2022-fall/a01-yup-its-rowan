@@ -1,0 +1,22 @@
+{
+  "name": "cheese-server",
+  "version": "1.0.0",
+  "description": "a server made of cheese",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/a01-yup-its-rowan.git"
+  },
+  "author": "yup-its-rowan",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/a01-yup-its-rowan/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/a01-yup-its-rowan#readme",
+  "dependencies": {
+    "minimist": "^1.2.6"
+  }
+}
